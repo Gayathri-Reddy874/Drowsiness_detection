@@ -1,6 +1,6 @@
 # 🚗 Driver Drowsiness & Yawn Detection System
 
-> Real-time computer vision safety system that detects driver fatigue from a webcam feed and raises instant voice + audio alerts — before drowsiness becomes a road hazard.
+> Real-time computer vision safety system that detects driver fatigue from a webcam feed and raises instant voice + audio alerts - before drowsiness becomes a road hazard.
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
 [![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-5C3EE8.svg)](https://opencv.org/)
@@ -9,7 +9,7 @@
 
 ## 📖 Overview
 
-Drowsy driving is a leading cause of road accidents worldwide, yet it's often invisible to the driver until it's too late. This project is a **real-time driver safety system** that continuously monitors a driver's eyes and mouth through a webcam, using **Eye Aspect Ratio (EAR)** and **Mouth Aspect Ratio (MAR)** — well-established computer vision metrics — to detect early signs of **drowsiness** and **yawning**, then immediately alerts the driver through **voice and audio alarms**.
+Drowsy driving is a leading cause of road accidents worldwide, yet it's often invisible to the driver until it's too late. This project is a **real-time driver safety system** that continuously monitors a driver's eyes and mouth through a webcam, using **Eye Aspect Ratio (EAR)** and **Mouth Aspect Ratio (MAR)** — well-established computer vision metrics - to detect early signs of **drowsiness** and **yawning**, then immediately alerts the driver through **voice and audio alarms**.
 
 The system runs entirely on local video processing (no cloud, no internet dependency), making it lightweight, privacy-respecting, and deployable on low-cost hardware such as an in-car Raspberry Pi or laptop setup.
 
