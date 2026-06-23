@@ -9,7 +9,7 @@
 
 ## 📖 Overview
 
-Drowsy driving is a leading cause of road accidents worldwide, yet it's often invisible to the driver until it's too late. This project is a **real-time driver safety system** that continuously monitors a driver's eyes and mouth through a webcam, using **Eye Aspect Ratio (EAR)** and **Mouth Aspect Ratio (MAR)** — well-established computer vision metrics - to detect early signs of **drowsiness** and **yawning**, then immediately alerts the driver through **voice and audio alarms**.
+Drowsy driving is a leading cause of road accidents worldwide, yet it's often invisible to the driver until it's too late. This project is a **real-time driver safety system** that continuously monitors a driver's eyes and mouth through a webcam, using **Eye Aspect Ratio (EAR)** and **Mouth Aspect Ratio (MAR)** - well-established computer vision metrics - to detect early signs of **drowsiness** and **yawning**, then immediately alerts the driver through **voice and audio alarms**.
 
 The system runs entirely on local video processing (no cloud, no internet dependency), making it lightweight, privacy-respecting, and deployable on low-cost hardware such as an in-car Raspberry Pi or laptop setup.
 
@@ -64,10 +64,10 @@ EAR = (‖p2−p6‖ + ‖p3−p5‖) / (2 × ‖p1−p4‖)
 MAR = (‖p14−p20‖ + ‖p15−p19‖) / (2 × ‖p13−p17‖)
 ```
 
-- A consistently **low EAR** means the eyes are closing — sustained for 20+ frames, this signals drowsiness rather than a normal blink.
-- A **high MAR** means the mouth is wide open — indicating a yawn.
+- A consistently **low EAR** means the eyes are closing - sustained for 20+ frames, this signals drowsiness rather than a normal blink.
+- A **high MAR** means the mouth is wide open - indicating a yawn.
 
-When either condition triggers, the system fires a snapshot, starts a background voice alert ("Wake up! Wake up! Wake up!") and a 2000Hz beep alarm simultaneously, and logs the event to CSV — all without freezing the live video feed, thanks to threading.
+When either condition triggers, the system fires a snapshot, starts a background voice alert ("Wake up! Wake up! Wake up!") and a 2000Hz beep alarm simultaneously, and logs the event to CSV - all without freezing the live video feed, thanks to threading.
 
 ## 📂 Project Structure
 
@@ -81,14 +81,14 @@ Drowsiness_detection/
 └── README.md
 ```
 
-> ⚠️ **Not included in the repo:** `shape_predictor_68_face_landmarks.dat` — dlib's pretrained facial landmark model. You'll need to download it separately (see setup below); it's excluded here due to its large file size.
+> ⚠️ **Not included in the repo:** `shape_predictor_68_face_landmarks.dat` - dlib's pretrained facial landmark model. You'll need to download it separately (see setup below); it's excluded here due to its large file size.
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 - Python 3.8+
 - A working **webcam**
-- **Windows OS** (the beep alarm uses `winsound`, a Windows-only module — see [Limitations](#-limitations--notes))
+- **Windows OS** (the beep alarm uses `winsound`, a Windows-only module - see [Limitations](#-limitations--notes))
 
 ### Installation
 
