@@ -120,7 +120,7 @@ Press **`Q`** at any time to stop the detection and close the window.
 
 ## 💡 Usage
 
-1. Launch the script — your webcam feed opens in a window titled **"Driver Alert System"**.
+1. Launch the script - your webcam feed opens in a window titled **"Driver Alert System"**.
 2. Live **EAR** and **MAR** values are displayed on-screen in real time.
 3. If your eyes stay closed (EAR < 0.21) for 20+ consecutive frames → a **"DROWSINESS ALERT!"** banner appears, a snapshot is saved, and voice + beep alerts start.
 4. If your mouth opens wide (MAR > 0.75) → a **"YAWN DETECTED!"** banner appears, with the same snapshot + alert behavior.
@@ -137,10 +137,10 @@ Press **`Q`** at any time to stop the detection and close the window.
 
 ## ⚠️ Limitations & Notes
 
-- **Windows-only beep alarm** — `winsound` is a Windows standard-library module, so the audible beep won't work on macOS/Linux without swapping in a cross-platform alternative (e.g. `playsound` or `simpleaudio`).
+- **Windows-only beep alarm** - `winsound` is a Windows standard-library module, so the audible beep won't work on macOS/Linux without swapping in a cross-platform alternative (e.g. `playsound` or `simpleaudio`).
 - Requires reasonably good, even lighting and a front-facing view for reliable face/landmark detection.
 - Designed for a **single driver/face** in frame; behavior with multiple faces is not explicitly handled.
-- Thresholds (`EAR_THRESH = 0.21`, frame limit = 20, `MAR > 0.75`) are general-purpose defaults — for production use, these would benefit from per-user calibration.
+- Thresholds (`EAR_THRESH = 0.21`, frame limit = 20, `MAR > 0.75`) are general-purpose defaults - for production use, these would benefit from per-user calibration.
 
 ## 🔭 Future Improvements
 
@@ -162,6 +162,7 @@ MIT License. Feel free to use and modify.
 ## 👩‍💻 Author
 
 **Mallareddygari Gayathri**
+
 GitHub: [@Gayathri-Reddy874](https://github.com/Gayathri-Reddy874)
 
 ---
